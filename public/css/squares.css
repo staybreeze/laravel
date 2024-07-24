@@ -1,0 +1,57 @@
+
+  @media screen and (max-width: 776px) {
+
+    #mouseSquareBig,
+    #mouseSquareMidium,
+    #mouseSquareSmall {
+      display: none;
+    }
+  }
+
+  #mouseSquareBig {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(253, 211, 104);
+    position: fixed;
+    transition-duration: 0.1s;
+    z-index: 999;
+    opacity: 0;
+  }
+
+  #mouseSquareMidium {
+    width: 18px;
+    height: 18px;
+    background-color:rgb(253, 211, 104);
+    position: fixed;
+    transition-duration: 0.14s;
+    z-index: 998;
+    opacity: 0;
+  }
+
+  #mouseSquareSmall {
+    width: 16px;
+    height: 16px;
+    background-color: rgb(253, 211, 104);
+    position: fixed;
+    transition-duration: 0.18s;
+    z-index: 998;
+    opacity: 0;
+  }
+  #mouseSquareSmaller {
+    width: 14px;
+    height: 14px;
+    background-color: rgb(253, 211, 104);
+    position: fixed;
+    transition-duration: 0.22s;
+    z-index: 998;
+    opacity: 0;
+  }
+  #mouseSquareSmallest {
+    width: 12px;
+    height: 12px;
+    /* background-color: rgb(253, 211, 104); */
+    position: fixed;
+    transition-duration: 0.26s;
+    z-index: 998;
+    opacity: 0;
+  }

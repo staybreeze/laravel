@@ -1,0 +1,625 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  
+  body {
+    overflow-x: hidden;
+
+  }
+
+  .w-10 {
+    width: 10%;
+  }
+
+  .h-5 {
+    height: 5vh;
+  }
+
+  .h-8 {
+    height: 8vh;
+  }
+
+  .h-11 {
+    height: 11vh;
+  }
+
+  .myInput {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+  }
+
+
+
+  header .page-link>ul {
+    display: flex
+  }
+
+  header .page-link>ul>li {
+    position: relative;
+    width: 130px;
+    height: 50.5px;
+    margin: 0 5px;
+    padding-left: 5px;
+    padding-top: 9px;
+
+  }
+
+  header .page-link>ul>li:last-child {
+    margin-right: 10px
+  }
+
+  header .page-link>ul>li>span {
+    color: #fff;
+    transition: .4s
+  }
+
+  header .page-link>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+    transition: .4s;
+
+  }
+
+  header .page-link .unloading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 1px;
+    background: #fff;
+
+  }
+
+  header .page-link .loading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #ffb71b;
+    transition: .5s
+  }
+
+
+
+
+  header .page-link li:hover {
+    cursor: pointer
+  }
+
+  header .page-link li:hover a,
+  header .page-link li:hover span {
+    color: #ffb71b
+  }
+.contact{
+  position: absolute;
+  top:300px;
+width:350px;
+  /* left:150px; */
+  /* display: none; */
+}
+  .font-awesome{
+    position: absolute;
+    right:50px;
+    top:45px;
+  }
+  .pages{
+    /* position: absolute; */
+    left:200px
+  }
+  .shopping-cart,
+  .shopping-cart-p, .fa-circle-user {
+    color: #fff;
+    text-decoration: none;
+    font-size: smaller;
+  }
+
+  .shopping-cart-a {
+    text-decoration: none;
+  }
+
+
+  .shopping-cart{
+
+    height: 0px;
+
+    transition: 0.5s
+  }
+
+  .shopping-cart:hover,  .fa-circle-user:hover {
+    color: #ffb71b
+  }
+
+  header .page-link li:hover .loading-bar {
+    width: 80px
+  }
+
+
+
+
+
+   .test {
+    /* border: 1px solid white; */
+    text-align: center;
+  } 
+
+
+  .btn-bg {
+    background-color: #ffb71b;
+    border: 0;
+  }
+
+  .btn-bg:hover {
+    background-color: rgb(240, 207, 170);
+  }
+
+  .logo {
+    padding-bottom: 3px;
+  }
+
+  #logo{
+    padding-top:2px;
+  }
+  
+  h2 {
+    color: white
+  }
+
+  .carousel-img {
+    width: 100%;
+    /* height: 50vh; */
+  }
+
+  .modal-dialog {
+    margin-left: 650px;
+    margin-top: 170px;
+  }
+
+
+
+  header {
+    height: 135px;
+    /* background: #343a40; */
+    /* padding: 0 243px; */
+    z-index: 1999;
+    position: sticky;
+    top: 0
+  }
+
+  .test-1 {
+    padding-top: 38px;
+  }
+
+  .bg-gray {
+    background-color: rgb(216, 162, 90);
+  }
+
+  li {
+    list-style: none;
+
+  }
+
+  .allPages {
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+
+    display: flex;
+    height: 210px;
+    width: 80%;
+    padding: 0 15px
+  }
+
+  footer {
+    position: relative;
+    height: 65vh;
+    
+    background-color: rgb(107, 62, 2);
+    /* padding: 30px 7px 5px 5px;
+    line-height: 30px;
+    clear: both;
+    overflow: hidden;
+    text-align: left;
+
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff; */
+
+  
+  }
+
+
+footer> .row{
+  background-color: rgb(107, 62, 2);
+}
+  footer a {
+    color: #fff;
+    text-decoration: none
+  }
+
+  footer .contact {
+    /* display: inline-block; */
+
+    /* width: 30%; */
+
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: .9px;
+    text-align: left;
+    color: #fff
+  }
+
+  footer .contact a {
+    color: #fff;
+    font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+  }
+
+  footer .contact p {
+    color: #fff;
+    font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.8rem
+  }
+
+
+
+
+  .allPages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* width: 80%; */
+    padding: 0 15px
+  }
+
+
+
+
+  footer .pages {
+    display: inline-block;
+    padding-right: 20px;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: .9px;
+    text-align: left;
+    color: #fff
+  }
+
+
+
+
+
+
+  footer .pages li a {
+    padding: 12px 0;
+    display: block
+  }
+
+  @media (hover: hover) {
+    footer .pages li a:hover {
+      color: #ffc94a
+    }
+
+
+  }
+
+
+  .copyright {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(216, 162, 90);
+    text-align: center;
+    color: #333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+
+  .copyright p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: .75px;
+    color: #6c6a6a;
+    padding-top: 15px;
+  }
+
+
+
+  .footer-header {
+    font-size: 23px;
+  }
+
+  .pages li {
+    font-size: 18px;
+  }
+
+  .footer {
+    margin-top: 20px;
+    padding-left:50px;
+
+
+  }
+
+
+  .join-us:hover {
+color:#ffc94a;
+    -webkit-animation-name: fa-shake;
+    animation-name: fa-shake;
+    -webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+    -webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+    -webkit-animation-duration: var(--fa-animation-duration, 1.3s);
+    animation-duration: var(--fa-animation-duration, 1.3s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+    animation-timing-function: var(--fa-animation-timing, linear);
+  }
+
+  .fa-cart-shopping:hover {
+    -webkit-animation-name: fa-bounce;
+    animation-name: fa-bounce;
+    -webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+    -webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+    -webkit-animation-duration: var(--fa-animation-duration, 1s);
+    animation-duration: var(--fa-animation-duration, 1s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+    animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+  }
+
+   .fa-circle-user:hover{
+    -webkit-animation-name: fa-beat;
+    animation-name: fa-beat;
+-webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+-webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+-webkit-animation-duration: var(--fa-animation-duration, 0.8s);
+    animation-duration: var(--fa-animation-duration, 0.8s);
+-webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+-webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    animation-timing-function: var(--fa-animation-timing, ease-in-out); 
+   }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #444444;
+  }
+
+  a,
+  a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .section-products {
+    padding: 80px 0 54px;
+  }
+
+  .section-products .header {
+    margin-bottom: 50px;
+  }
+
+  .section-products .header h3 {
+    font-size: 1rem;
+    color: #fe302f;
+    font-weight: 500;
+  }
+
+  .section-products .header h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444;
+  }
+
+  .section-products .single-product {
+    margin-bottom: 26px;
+  }
+
+  .section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .section-products .single-product .part-1::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.3s;
+  }
+
+  .section-products .single-product:hover .part-1::before {
+    transform: scale(1.2, 1.2) rotate(5deg);
+  }
+
+  .section-products #product-1 .part-1::before {
+    background: url("../img/good1.webp") no-repeat center;
+    background-size: cover;
+    transition: all 0.3s;
+  }
+
+  .section-products #product-2 .part-1::before {
+    background: url("../img/good2.webp") no-repeat center;
+    background-size: cover;
+  }
+
+  .section-products #product-3 .part-1::before {
+    background: url("../img/good3.webp") no-repeat center;
+    background-size: cover;
+  }
+
+  .section-products #product-4 .part-1::before {
+    background: url("../img/good4.webp") no-repeat center;
+    background-size: cover;
+  }
+
+  .section-products #product-5 .part-1::before {
+    background: url("../img/good5.webp") no-repeat center;
+    background-size: cover;
+  }
+
+  .section-products #product-6 .part-1::before {
+    background: url("../img/good6.webp") no-repeat center;
+    background-size: cover;
+  }
+
+  .section-products #product-7 .part-1::before {
+    background: url("../img/good7.webp") no-repeat center;
+    background-size: cover;
+  }
+
+  .section-products #product-8 .part-1::before {
+    background: url("../img/good8.webp") no-repeat center;
+    background-size: cover;
+  }
+
+  .section-products .single-product .part-1 .discount,
+  .section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+  }
+
+  .section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #444444;
+  }
+
+  .section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+  }
+
+  .section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  .section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+  }
+
+  .section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+  }
+
+  .section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+  }
+
+  .section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+  }
+
+  .section-products .single-product .part-2 h4 {
+    display: inline-block;
+    font-size: 1rem;
+  }
+
+  .section-products .single-product .part-2 .product-old-price {
+    position: relative;
+    padding: 0 7px;
+    margin-right: 2px;
+    opacity: 0.6;
+  }
+
+  .section-products .single-product .part-2 .product-old-price::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #444444;
+    transform: translateY(-50%);
+  }
+
+  .logo-area{
+
+height:80%;
+width:15%;
+margin-top:7px;
+  }
+
+/* footer .row>.col{
+  border:5px solid black;
+} */
+
+.join-us{
+  color:#ffc94a;
+  font-size: 60px;
+  font-weight:bolder;
+  border:3px solid#ffb71b;
+  width:170px;
+  height:195px;
+position:absolute;
+/* top:100px; */
+/* left:465px; */
+/* right:100px; */
+}
+.header-title{
+  position: absolute;
+  top:0px
+}
+
+
+nav{
+height:3vh;
+position: fixed;
+}
+

@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+
+    .container {
+        overflow-x: hidden;
+    }
+
+    .liked {
+        color: #fe302f
+    }
+
+    #shoppingBtn,
+    #discountBanner {
+        display: none;
+    }
+
+
+    @media screen and (max-width: 450px) {
+
+        #shoppingBtn,
+        #discountBanner {
+            display: block;
+
+        }
+
+        .img-cat {
+            width: 75%;
+            margin-top: 20px;
+            margin-left: 50px
+        }
+
+    }
+
+    .disabled {
+        display: none;
+    }
+
+    .banner {
+
+        position: relative;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .item {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* opacity: 0; */
+    }
+
+    .item h2,
+    .good-header h3,
+    p {
+
+        font-family: 'Zen Maru Gothic', serif;
+    }
+
+    .top {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        padding-top: 1px;
+        text-align: center;
+        align-items: center;
+        right: 20px;
+        bottom: 200px;
+        background-color: rgb(216, 162, 90);
+        color: #fff;
+        /* font-weight: bold; */
+        font-size: 20px;
+        font-family: Rubik scribble;
+        /* border-bottom: 1px solid#00707f;   */
+        z-index: 9999;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .img-cat {
+        border-radius: 10px 10px 0 0;
+        object-fit: cover;
+
+    }
+
+    .part-1 {
+        position: relative;
+        width: 69.5%;
+        /* background-color: #fe302f; */
+        margin-left: 50px;
+    }
+
+    .part-1 img {
+
+        width: 100%;
+        height: 300px;
+        /* margin-left: 50px; */
+    }
+
+    .img-cat:hover {
+        /* border-radius: 10px; */
+        transition: all .5s;
+        /* transform: scale(0.8); */
+        opacity: 0.5;
+    }
+
+    .part-1::after {
+        width: 30%;
+        content: "Bring Me Home.";
+        /* font-family: 'Zen Maru Gothic', serif; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.2s;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .part-1:hover::after {
+        opacity: 1;
+        border-radius: 5px;
+        background-color: goldenrod;
+        color: #fff;
+        padding-left: 5px;
+    }
+
+    .img-cat:hover,
+    .img-cat:hover~.part-1::after {
+        /* 在.img-cat:hover或其后的.part-1::after上應用效果 */
+        /* border-radius: 10px; */
+        transition: all .2s;
+        /* transform: scale(0.8); */
+        opacity: 0.5;
+        border: 5px solid rgb(253, 214, 152);
+    }
+
+    :root {
+        --color-brown: #B99362;
+    }
+
+
+    svg {
+        height: 80vh;
+        margin-top: -40px;
+        margin-left: -100px;
+        transform: rotate(0deg);
+    }
+
+
+
+    path {
+        stroke: white;
+        fill: rgb(181, 163, 163);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    path:not([data-id='23']):not([data-id='21']):not([data-id='22']):not([data-sub-id='24']):hover {
+        fill: var(--color-brown);
+        /* transform: translate(-5px, -5px); */
+    }
+
+
+    path[data-id='23']:hover,
+    path[data-id='21']:hover,
+    path[data-id='22']:hover,
+    path[data-sub-id='24']:hover {
+        fill: palevioletred
+    }
+
+    .forcast h2,
+    .forcast h4,
+    .forcast h5 {
+        margin: 0;
+    }
+
+    .forcast h2 {
+        margin-top: 20px;
+    }
+
+    .good-row {
+        width: 82%;
+        margin: auto;
+    }
+
+    .data-cats {
+        font-size: 1rem;
+        line-height: 20px;
+        text-align: center;
+        padding-right: 18px;
+        width: 80%;
+        font-weight: bold;
+        color: #B99362;
+        /* margin:auto */
+    }
+
+    .data-title {
+        color: brown;
+        background-color: papayawhip;
+        padding-top: 10px;
+        height: 35px;
+        width: 70%;
+        font-size: 15px;
+        text-align: center;
+        /* margin: auto */
+    }
+
+    .go-adopt {
+        height: 35px;
+        width: 10.6%;
+        background-color: #B99362;
+        color: papayawhip;
+        text-align: center;
+        padding-top: 6px;
+        cursor: pointer;
+        /* font-size: smaller; */
+
+    }
+
+    .part-,
+    .part-2 {
+        margin-left: 50px;
+    }
+
+    #loadingIndicator {
+        position: absolute;
+        top: 78%;
+        left: 39.2%;
+        color: #B99362;
+        font-size: 10px;
+        width: 5px
+    }
+
+    .progress {
+        position: fixed;
+        width: 100%;
+        background-color: #f0f0f0;
+        height: 5px;
+        margin-bottom: 20px;
+        z-index: 999999;
+    }
+
+    .progress-bar {
+        height: 100%;
+        background-color: cadetblue;
+        width: 0%;
+    }
